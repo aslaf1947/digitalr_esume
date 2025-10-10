@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f1f1f1;
+}
+
+.builder-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.add-button {
+  padding: 10px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.toolbar button,
+.toolbar select {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.delete-button {
+  padding: 10px 16px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.resume-canvas {
+  width: 794px; /* A4 width */
+  height: 1123px;
+  background: #fff;
+  border: 1px solid #ccc;
+  position: relative;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.text-box {
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  background-color: #fefefe;
+  overflow: auto;
+  outline: none;
+}
+
+.text-box.selected {
+  border: 1px dashed #2196f3;
+}
+
+.line-element {
+  margin: 0;
+  cursor: grab;
+}
+.text-box:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* draggable.css */
+
+.text-box.selected {
+  outline: 1px dashed #000; /* For editor only */
+}
+
+/* Hide selection styling when printing/downloading */
+@media print {
+  .text-box.selected {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}

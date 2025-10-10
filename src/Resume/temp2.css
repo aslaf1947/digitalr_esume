@@ -1,0 +1,215 @@
+/* body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f3f3f3;
+  margin: 0;
+  padding: 20px;
+}
+
+.resume {
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  background: #f1f1f1;
+  width: 35%;
+  padding: 20px;
+  text-align: center;
+}
+
+.right {
+  width: 65%;
+  padding: 30px;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  background: #444;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.position {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.job, .education-item, .skill-item {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.job-title, .company {
+  font-weight: bold;
+  color: #444;
+}
+
+.year {
+  float: right;
+  color: #999;
+}
+
+.contact, .education, .skills {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.reference-section {
+  margin-top: 30px;
+}
+
+.reference {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.editable {
+  outline: none;
+  cursor: text;
+  background-color: transparent;
+}
+
+.editable:hover {
+  background-color: #f3f4f6;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  border: 0;
+  background-color: #c026d3;
+  color: white;
+  border-radius: 0.125rem;
+  padding: 4px 8px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-wrap-gap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+ul.no-padding {
+  padding-left: 0;
+}
+
+.scroll-style::-webkit-scrollbar {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+.scroll-style::-webkit-scrollbar-track {
+  background-color: #e5e7eb;
+}
+.scroll-style::-webkit-scrollbar-thumb {
+  background-color: #c026d3;
+}
+.scroll-style::-webkit-scrollbar-thumb:hover {
+  background-color: #a21caf;
+}
+
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.profession {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact-info {
+  font-size: 14px;
+}
+
+.social-media {
+  font-size: 12px;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.sub-content {
+  font-size: 12px;
+}
+
+.i-bold {
+  font-weight: 700 !important;
+}
+
+
+@media print {
+  .exclude-print {
+    display: none;
+  }
+
+  .rm-padding-print {
+    padding: 0;
+  }
+
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
+  .resume {
+    box-shadow: none;
+  }
+
+  .resume::after {
+    content: "Created using https://atsresume.vercel.app/";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.2;
+    font-size: small;
+    text-align: center;
+    z-index: -1;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .resume {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+} */

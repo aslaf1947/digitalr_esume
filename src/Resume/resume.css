@@ -1,0 +1,182 @@
+body {
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+    height: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e5e7eb; /* Tailwind's gray-200 */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c026d3; /* Tailwind's fuchsia-600 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a21caf; /* Tailwind's fuchsia-700 */
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.ul-padding {
+    padding-inline-start: 0.9rem;
+}
+
+.ul-padding-none {
+    padding-inline-start: 0;
+}
+
+.pi {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    background-color: white;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.profileInput {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    background-color: white;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.profileInput[type="file"]::-webkit-file-upload-button {
+    border: 0;
+    background-color: #c026d3;
+    color: white;
+    border-radius: 0.125rem;
+}
+
+.flex-col-gap-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.flex-wrap-gap-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.other-input {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    background-color: white;
+    border-radius: 0.25rem;
+}
+
+.other-input:focus::placeholder {
+    color: transparent;
+}
+
+.input-title {
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
+
+.f-col {
+    display: flex;
+    flex-direction: column;
+}
+.f-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.editable {
+    outline: none;
+    cursor: text;
+}
+
+.editable:hover {
+    background-color: #f3f4f6; /* Tailwind's gray-100 */
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.profession {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.social-media {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sub-content {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.i-bold {
+    font-weight: 700 !important;
+}
+
+/* === PRINT STYLES === */
+@media print {
+    .exclude-print {
+        display: none;
+    }
+
+    .rm-padding-print {
+        padding: 0;
+    }
+
+    @page {
+        size: A4;
+        margin: 10mm;
+    }
+
+    .preview {
+        overflow-y: visible !important;
+    }
+
+    .preview::after {
+        content: "Created using https://atsresume.vercel.app/";
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        opacity: 0.2;
+        font-size: small;
+        text-align: center;
+        z-index: -1;
+    }
+}
